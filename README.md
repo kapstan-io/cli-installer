@@ -1,1 +1,1 @@
-# releases
+# cli-installer
