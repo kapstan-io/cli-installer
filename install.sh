@@ -80,4 +80,6 @@ if ! echo "$PATH" | grep -q "$INSTALL_DIR"; then
     echo "Please add $INSTALL_DIR to your PATH environment variable."
 fi
 
+mkdir -p ~/.kapstan
+
 echo "Installation complete! You can now run 'kapstan' from the command line."
