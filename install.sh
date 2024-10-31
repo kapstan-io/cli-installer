@@ -81,5 +81,6 @@ if ! echo "$PATH" | grep -q "$INSTALL_DIR"; then
 fi
 
 mkdir -p ~/.kapstan
+sudo chown $USER ~/.kapstan
 
 echo "Installation complete! You can now run 'kapstan' from the command line."
