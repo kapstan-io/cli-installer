@@ -44,7 +44,7 @@ if ! command -v curl >/dev/null 2>&1; then
 fi
 
 # 3. Attempt to curl the correct binary download from GitHub
-VERSION="0.1.9"
+VERSION="0.2.0"
 BINARY_NAME="kapstan-${OS}-${ARCH}"
 DOWNLOAD_URL="https://github.com/kapstan-io/releases/releases/download/v${VERSION}/${BINARY_NAME}"
 
