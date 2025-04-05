@@ -44,7 +44,7 @@ if ! command -v curl >/dev/null 2>&1; then
 fi
 
 # 3. Attempt to curl the correct binary download from GitHub
-VERSION="${VERSION:-0.2.1}"
+VERSION="${KAPSTAN_CLI_VERSION:-0.2.1}"
 BINARY_NAME="kapstan-${OS}-${ARCH}"
 DOWNLOAD_URL="https://github.com/kapstan-io/releases/releases/download/v${VERSION}/${BINARY_NAME}"
 
@@ -62,7 +62,7 @@ fi
 chmod +x kapstan_tmp
 
 # 5. Move the binary to the user's local bin and adjust the name
-INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
+INSTALL_DIR="${KAPSTAN_CLI_INSTALL_DIR:-/usr/local/bin}"
 
 # Check if we have permission to write to INSTALL_DIR
 if [ -w "$INSTALL_DIR" ]; then
