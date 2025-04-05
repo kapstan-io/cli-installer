@@ -62,7 +62,7 @@ fi
 chmod +x kapstan_tmp
 
 # 5. Move the binary to the user's local bin and adjust the name
-INSTALL_DIR="/usr/local/bin"
+INSTALL_DIR="${INSTALL_DIR:-/usr/local/bin}"
 
 # Check if we have permission to write to INSTALL_DIR
 if [ -w "$INSTALL_DIR" ]; then
